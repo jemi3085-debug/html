@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 리스너 속성에 자바스크립트 코드</title>
+    <script src="js/lib.js">
+        // 자바스크립트 코드 안에는 아무것도 적혀있으면 안 된다.
+        // function over(obj) {
+        //     obj.src = "img/banana.png";
+        // }
+        // function out(obj) {
+        //     obj.src = 'img/apple.png';
+        // }
+    </script>
+</head>
+<body>
+    <h3>마우스를 올려보세요.</h3>
+    <hr>
+    <!-- this는 자기 참조 변수다 -->
+    <img src="img/apple.png" alt="사과 이미지" onmouseover="over(this)" onmouseout='out(this)'>  
+    <!-- <img src="img/apple.png" alt="사과 이미지" onmouseover="this.src = 'img/banana.png'" onmouseout="this.src = 'img/apple.png'">    -->
+</body>
+</html>
